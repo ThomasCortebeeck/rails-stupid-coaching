@@ -1,0 +1,27 @@
+<head>
+</head>
+
+
+<h1>Stupid Coaching</h1>
+
+<div class="question">
+	<p><%= @question %></p>
+	<p><em>-You</em></p>
+</div>
+<div class="answer">
+	<p><%= @answer %> </p>
+	<p><em>-You</em></p>
+</div>
+
+<%= link_to "Ask a new question", ask_path %>
+
+<!-- ask -> search : rails routes -->
+<!-- _path always needs to be added -->
+
+<!-- output with: hello note : "="" required to see it! -->
+
+<!-- if http://localhost:3000/answer? -> RAISE: <ActionController::Parameters {"controller"=>"questions", "action"=>"answer"} permitted: false> -->
+<!-- if http://localhost:3000/answer?question=hello -> RAISE: <ActionController::Parameters {"question"=>"hello", "controller"=>"questions", "action"=>"answer"} permitted: false> -->
+
+ 
+<!-- The answer.html.erb will display the question you ask your coach as well as his answer. ! -->
